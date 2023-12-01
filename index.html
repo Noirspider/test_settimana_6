@@ -22,80 +22,69 @@
 
     <!-----------------------------------NAVBAR----------------------------------------------------------->
 
-    <div class="container mb-3">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="row">
-                <!------------------------------Colonna logo ----------------------------------------------------->
-                <div class="col-2">
-                    <a class="navbar-brand" href="#"><img src="./assets/img/Netflix-assets/netflix_logo.png"
-                            alt="netflix-logo" class="img-fluid"></a>
-                </div>
 
-                <!------------------------------Colonna di navigazione--------------------------------------------->
-                <div class="col-5">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <!------------------------------Colonna logo ----------------------------------------------------->
+        <div style="max-width:10%;">
+            <a class="navbar-brand" href="#"><img src="./assets/img/Netflix-assets/netflix_logo.png" alt="netflix-logo"
+                    class="img-fluid"></a>
+        </div>
+
+        <!------------------------------Colonna di navigazione--------------------------------------------->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto fs-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                </li>
+            </ul>
+        </div>
+
+        <!------------------------------Colonna vuota----------------------------------------------------->
+
+        <!------------------------------Colonna di destra--------------------------------------------->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class=" navbar-nav ml-auto">
+                <li class="nav-item"><i class="bi bi-search text-white fs-5 p-4"></i></li>
+                <li class="nav-item"><a class="nav-link" href="#">KIDS</a></li>
+                <li class="nav-item"><i class="bi bi-bell-fill text-white fs-5 p-4"></i></li>
+            </ul>
+            <div class="dropdown" style="min-width: 50%;">
+                <button class="btn btn-secondary dropdown-toggle bg-dark border border-0" type="button"
+                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/img/Netflix-assets/avatar.png" alt="icona-utente" class="iconaUtente">
+                </button>
+                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item text-white" type="button">
+                        <img src="./assets/img/Netflix-assets/avatar.png" alt="icona-utente" class="iconaUtente">
+                        utente 2
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto fs-5">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TV Shows</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Movies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Recently Added</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">My List</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <button class="dropdown-item text-white" type="button">
+                        <img src="./assets/img/Netflix-assets/kids_icon.png" alt="icona-kids" class="iconaUtente">
+                        utente 3
+                    </button>
                 </div>
-
-                <!------------------------------Colonna vuota----------------------------------------------------->
-
-                <div class="col-auto col-lg-2">
-                </div>
-
-                <!------------------------------Colonna di destra--------------------------------------------->
-                <div class="col-3">
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class=" navbar-nav ml-auto">
-                            <li class="nav-item"><i class="bi bi-search text-white fs-5 p-4"></i></li>
-                            <li class="nav-item"><a class="nav-link" href="#">KIDS</a></li>
-                            <li class="nav-item"><i class="bi bi-bell-fill text-white fs-5 p-4"></i></li>
-                        </ul>
-                        <div class="dropdown" style="min-width: 50%;">
-                            <button class="btn btn-secondary dropdown-toggle bg-dark border border-0" type="button"
-                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="./assets/img/Netflix-assets/avatar.png" alt="icona-utente"
-                                    class="iconaUtente">
-                            </button>
-                            <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item text-white" type="button">
-                                    <img src="./assets/img/Netflix-assets/avatar.png" alt="icona-utente"
-                                        class="iconaUtente">
-                                    utente 2
-                                </button>
-                                <button class="dropdown-item text-white" type="button">
-                                    <img src="./assets/img/Netflix-assets/kids_icon.png" alt="icona-kids"
-                                        class="iconaUtente">
-                                    utente 3
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!----------------------------------------------------------------------------------->
             </div>
-        </nav>
-    </div>
+        </div>
+        <!----------------------------------------------------------------------------------->
+    </nav>
 
 
     <!-------------------------------------BARRA DEGLI STRUMENTI----------------------------------->
@@ -150,32 +139,32 @@
             <h3 class="text-white mb-3">Trending now</h3>
         </div>
         <div class="row">
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media0.webp" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media13.jpg" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media1.jpg" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media10.jpg" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media11.jpg" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media12.jpg" alt="nome film" class="img-fluid">
                 </div>
@@ -186,32 +175,32 @@
             <h3 class="text-white mb-3">Watch It Again</h3>
         </div>
         <div class="row">
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media14.webp" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media15.jpg" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media16.webp" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media17.jpg" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media18.jpg" alt="nome film" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4 col-lg-2">
+            <div class="col-xs-6 col-md-4 col-lg-2 g-1">
                 <div>
                     <img src="./assets/img/Netflix-assets/media/media19.webp" alt="nome film" class="img-fluid">
                 </div>
@@ -222,32 +211,32 @@
             <h3 class="text-white mb-3"> New Releases</h3>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="col-sm-6 col-md-4 col-lg-2 g-1">
 
                 <img src="./assets/img/Netflix-assets/media/media20.jpg" alt="nome film" class="img-fluid">
 
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="col-sm-6 col-md-4 col-lg-2 g-1">
 
                 <img src="./assets/img/Netflix-assets/media/media21.webp" alt="nome film" class="img-fluid">
 
             </div>
-            <div class="d-sm-none d-md-block col-md-4 col-lg-2">
+            <div class="d-sm-none d-md-block col-md-4 col-lg-2 g-1">
 
                 <img src="./assets/img/Netflix-assets/media/media22.webp" alt="nome film" class="img-fluid">
 
             </div>
-            <div class="d-sm-none d-lg-block col-lg-2">
+            <div class="d-sm-none d-lg-block col-lg-2 g-1">
 
                 <img src="./assets/img/Netflix-assets/media/media23.webp" alt="nome film" class="img-fluid">
 
             </div>
-            <div class="d-sm-none d-lg-block col-lg-2">
+            <div class="d-sm-none d-lg-block col-lg-2 g-1">
 
                 <img src="./assets/img/Netflix-assets/media/media25.webp" alt="nome film" class="img-fluid">
 
             </div>
-            <div class="d-sm-none d-lg-block col-lg-2">
+            <div class="d-sm-none d-lg-block col-lg-2 g-1">
 
                 <img src="./assets/img/Netflix-assets/media/media24.jpg" alt="nome film" class="img-fluid">
 
@@ -257,20 +246,104 @@
     <!----------------------------------------------Footer---------------------------------------------->
 
 
-    <footer class="">
-        <div class="container-fluid bg-black ">
+    <footer class="container p-5 text-secondary">
 
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col-2"></div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-7">
+                <i class="bi bi-facebook text-secondary"></i>
+                <i class="bi bi-instagram text-secondary"></i>
+                <i class="bi bi-twitter text-secondary"></i>
+                <i class="bi bi-youtube text-secondary"></i>
             </div>
-
+            <div class="col-3"></div>
         </div>
+        <div class="row" style=" font-size: small;">
+            <div class="col-2">
 
+            </div>
+            <div class="col">
+                <ul class="text-secondary">
+                    <li>
+                        <p> Audio and Subtitles </p>
+                    </li>
+                    <li>
+                        <p>Media Center</p>
+                    </li>
+                    <li>
+                        <p>Privacy</p>
+                    </li>
+                    <li>
+                        <p>Contact Us</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="text-secondary">
+                    <li>
+                        <p> Audio and Subtitles </p>
+                    </li>
+                    <li>
+                        <p>Media Center</p>
+                    </li>
+                    <li>
+                        <p>Privacy</p>
+                    </li>
+                    <li>
+                        <p>Contact Us</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="text-secondary">
+                    <li>
+                        <p> Audio and Subtitles </p>
+                    </li>
+                    <li>
+                        <p>Media Center</p>
+                    </li>
+                    <li>
+                        <p>Privacy</p>
+                    </li>
+                    <li>
+                        <p>Contact Us</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="text-secondary">
+                    <li>
+                        <p> Audio and Subtitles </p>
+                    </li>
+                    <li>
+                        <p>Media Center</p>
+                    </li>
+                    <li>
+                        <p>Privacy</p>
+                    </li>
+                    <li>
+                        <p>Contact Us</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-7">
+                <button class="bg-dark border border-1 border-secondary text-secondary my-2" style="font-size: small;">
+                    Service Code
+                </button>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-7">
+                <p style="font-size: x-small;"> © 1997-2019 Netflix, Inc. (i-Od00fcda2faf9c0de) </p>
+            </div>
+            <div class="col-3"></div>
+        </div>
     </footer>
 
 
