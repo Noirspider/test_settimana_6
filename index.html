@@ -23,7 +23,7 @@
     <!-----------------------------------NAVBAR----------------------------------------------------------->
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-around">
 
         <!------------------------------Colonna logo ----------------------------------------------------->
         <div style="max-width:10%;">
@@ -90,44 +90,39 @@
     <!-------------------------------------BARRA DEGLI STRUMENTI----------------------------------->
 
 
-    <div class="container my-3">
-        <div class="row">
-            <!----------------------------------------------------------------------------------->
-            <div class="col-sm-2 col-md-4 col-lg-4 col-xl-3">
-                <h1 class="text-white px-3">TV SHOWS</h1>
-            </div>
-            <!----------------------------------------------------------------------------------->
-            <div class="col-sm-auto col-md-2">
-                <div class="dropdown">
+    <div class="container my-3 d-flex justify-content-between">
+        <!----------------------------------------------------------------------------------->
+        <h1 class="text-white">TV SHOWS</h1>
+        <!----------------------------------------------------------------------------------->
 
-                    <button class="btn btn-secondary dropdown-toggle bg-black border border-2 fs-4 text-white"
-                        type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Genres
-                    </button>
-                    <div class="dropdown-menu bg-black border border-2 fs-4" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item text-white" type="button">
-                            Christmas
-                        </button>
-                        <button class="dropdown-item text-white" type="button">
-                            Commedy
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!----------------------------------------------------------------------------------->
-            <div class="col-sm-1 col-md-3 col-lg-4 col-xl-5"></div>
-            <!----------------------------------------------------------------------------------->
-            <div class="col-2">
-                <button type="button" class="btn btn-outline-secondary text-white border rounded-0">
-                    <i class="bi bi-list"></i>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle bg-black border border-2 fs-4 text-white" type="button"
+                id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genres
+            </button>
+            <div class="dropdown-menu bg-black border border-2 fs-4 align-items-end" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item text-white" type="button">
+                    Christmas
                 </button>
-                <button type="button" class="btn btn-outline-secondary text-white border rounded-0">
-                    <i class="bi bi-grid-fill"></i>
+                <button class="dropdown-item text-white d-flex" type="button">
+                    Commedy
                 </button>
             </div>
-            <!----------------------------------------------------------------------------------->
         </div>
+
+        <!----------------------------------------------------------------------------------->
+
+        <!----------------------------------------------------------------------------------->
+        <div>
+            <button type="button" class="btn btn-outline-secondary text-white border rounded-0">
+                <i class="bi bi-list"></i>
+            </button>
+            <button type="button" class="btn btn-outline-secondary text-white border rounded-0">
+                <i class="bi bi-grid-fill"></i>
+            </button>
+        </div>
+        <!----------------------------------------------------------------------------------->
+
     </div>
 
     <!-----------------------------------Corpo principale---------------------------------------------->
