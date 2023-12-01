@@ -24,7 +24,7 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
+        <div class="container">
             <!------------------------------ logo ----------------------------------------------------->
             <div style="max-width:15%;">
                 <a class="navbar-brand" href="#"><img src="./assets/img/Netflix-assets/netflix_logo.png"
@@ -62,24 +62,29 @@
                     <li class="nav-item"><i class="bi bi-search text-white fs-5 p-4"></i></li>
                     <li class="nav-item"><a class="nav-link" href="#">KIDS</a></li>
                     <li class="nav-item"><i class="bi bi-bell-fill text-white fs-5 p-4"></i></li>
+                    <li>
+                        <div class="dropdown" style="min-width: 50%;">
+                            <button class="btn btn-secondary dropdown-toggle bg-dark border border-0" type="button"
+                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./assets/img/Netflix-assets/avatar.png" alt="icona-utente"
+                                    class="iconaUtente">
+                            </button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item text-white" type="button">
+                                    <img src="./assets/img/Netflix-assets/avatar.png" alt="icona-utente"
+                                        class="iconaUtente">
+                                    utente 2
+                                </button>
+                                <button class="dropdown-item text-white" type="button">
+                                    <img src="./assets/img/Netflix-assets/kids_icon.png" alt="icona-kids"
+                                        class="iconaUtente">
+                                    utente 3
+                                </button>
+                    </li>
                 </ul>
-                <div class="dropdown" style="min-width: 50%;">
-                    <button class="btn btn-secondary dropdown-toggle bg-dark border border-0" type="button"
-                        id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="./assets/img/Netflix-assets/avatar.png" alt="icona-utente" class="iconaUtente">
-                    </button>
-                    <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item text-white" type="button">
-                            <img src="./assets/img/Netflix-assets/avatar.png" alt="icona-utente" class="iconaUtente">
-                            utente 2
-                        </button>
-                        <button class="dropdown-item text-white" type="button">
-                            <img src="./assets/img/Netflix-assets/kids_icon.png" alt="icona-kids" class="iconaUtente">
-                            utente 3
-                        </button>
-                    </div>
-                </div>
             </div>
+        </div>
+        </div>
         </div>
     </nav>
 
